@@ -1,0 +1,11 @@
+{
+"label": "F.B14.4_RGB",
+"tags": ["RGB"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": 180.0 , "y": -1127.1919, "z": 0.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 240, "num": 1}],
+"meta": {"key1": "val2", "key3": "val4"}
+}
