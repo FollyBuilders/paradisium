@@ -1,0 +1,54 @@
+plugins {
+	id 'application'
+	id 'java'
+	id "com.github.johnrengelman.shadow" version "7.1.2"
+	id "com.diffplug.spotless" version "6.8.0"
+}
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(18)
+		vendor = JvmVendorSpec.ADOPTIUM
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation fileTree(dir: 'third-party/lxstudio-ide/lib', include: ['*.jar'])
+	implementation fileTree(dir: 'third-party/lxstudio-ide/lib/processing-4.0b8', include: ['*.jar'])
+}
+
+testing {
+	suites {
+		test {
+			useJUnitJupiter('5.8.1')
+		}
+	}
+}
+
+application {
+	mainClass = 'com.follybuilders.paradisium.ParadisiumApp'
+}
+
+spotless {
+	ratchetFrom 'origin/main'
+
+	format 'misc', {
+		target '*.gradle', '*.md', '.gitignore'
+		trimTrailingWhitespace()
+		indentWithTabs() // or spaces. Takes an integer argument if you don't like 4
+		endWithNewline()
+	}
+
+	groovyGradle {
+		target '*.gradle' // default target of groovyGradle
+		greclipse()
+	}
+	java {
+		googleJavaFormat()
+	    licenseHeader '/* (C)$YEAR */'
+	}
+}
