@@ -34,8 +34,6 @@ application {
 }
 
 spotless {
-	ratchetFrom 'origin/main'
-
 	format 'misc', {
 		target '*.gradle', '*.md', '.gitignore'
 		trimTrailingWhitespace()
@@ -49,6 +47,6 @@ spotless {
 	}
 	java {
 		googleJavaFormat()
-	    licenseHeader '/* (C)$YEAR */'
+		licenseHeader '/* (C)$YEAR */'
 	}
 }
