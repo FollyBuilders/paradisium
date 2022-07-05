@@ -4,9 +4,11 @@ OS=$(uname)
 AARCH=$(uname -m)
 
 NATIVE_DIR="natives"
-PROCESSING_DIR="../third-party/lxstudio-ide/lib/processing-4.0b 8"
+PROCESSING_DIR="../third-party/lxstudio-ide/lib/processing-4.0b8"
 
-mkdir ${NATIVE_DIR}
+git submodule update --init --recursive
+
+mkdir -p ${NATIVE_DIR}
 
 sudo ln -s ${PROCESSING_DIR}/linux-aarch64 ${NATIVE_DIR}/linux-aarch64
 sudo ln -s ${PROCESSING_DIR}/linux-amd64 ${NATIVE_DIR}/linux-amd64
