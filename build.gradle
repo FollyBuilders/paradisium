@@ -17,17 +17,26 @@ repositories {
 }
 
 dependencies {
-	implementation fileTree(dir: 'third-party/lxstudio-ide/lib', include: ['*.jar'])
-	implementation fileTree(dir: 'third-party/lxstudio-ide/lib/processing-4.0b8', include: ['*.jar'])
+	implementation fileTree(dir: 'third-party/lxstudio-ide/lib', include: ['**/*.jar'])
+
+	implementation group: 'org.reflections', name: 'reflections', version: '0.10.2'
+
+	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.8.2'
+	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.8.2'
 }
 
 testing {
 	suites {
 		test {
-			useJUnitJupiter('5.8.1')
+			useJUnitJupiter()
 		}
 	}
 }
+
+test {
+	testLogging.showStandardStreams = true
+}
+
 
 application {
 	mainClass = 'com.follybuilders.paradisium.ParadisiumApp'
@@ -37,12 +46,12 @@ spotless {
 	format 'misc', {
 		target '*.gradle', '*.md', '.gitignore'
 		trimTrailingWhitespace()
-		indentWithTabs() // or spaces. Takes an integer argument if you don't like 4
+		indentWithTabs()
 		endWithNewline()
 	}
 
 	groovyGradle {
-		target '*.gradle' // default target of groovyGradle
+		target '*.gradle'
 		greclipse()
 	}
 	java {
