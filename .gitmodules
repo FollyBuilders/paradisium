@@ -1,3 +1,4 @@
 [submodule "third-party/lxstudio-ide"]
 	path = third-party/lxstudio-ide
 	url = git@github.com:heronarts/lxstudio-ide
+	ignore = dirty
