@@ -2,25 +2,26 @@ name: Run Gradle on PRs
 on:
   pull_request:
     paths-ignore:
-    - '**.md'
-    - 'docs/**'
+      - "**.md"
+      - "docs/**"
 jobs:
   gradle:
+    timeout-minutes: 10
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest]
+        os: [ubuntu-latest]
     runs-on: ${{ matrix.os }}
     steps:
-    - uses: actions/checkout@v3
-      with:
-        submodules: recursive
-    - uses: actions/setup-java@v3
-      with:
-        distribution: temurin
-        java-version: 11
-        
-    - name: Setup Gradle
-      uses: gradle/gradle-build-action@v2
-    
-    - name: Execute Gradle build
-      run: ./gradlew build
+      - uses: actions/checkout@v3
+        with:
+          submodules: recursive
+      - uses: actions/setup-java@v3
+        with:
+          distribution: temurin
+          java-version: 11
+
+      - name: Setup Gradle
+        uses: gradle/gradle-build-action@v2
+
+      - name: Execute Gradle build
+        run: ./gradlew build
