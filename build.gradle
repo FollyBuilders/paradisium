@@ -20,6 +20,7 @@ dependencies {
 	implementation fileTree(dir: 'third-party/lxstudio-ide/lib', include: ['**/*.jar'])
 
 	implementation group: 'org.reflections', name: 'reflections', version: '0.10.2'
+	implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
 
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter', version: '5.8.2'
 	testImplementation group: 'org.junit.jupiter', name: 'junit-jupiter-params', version: '5.8.2'

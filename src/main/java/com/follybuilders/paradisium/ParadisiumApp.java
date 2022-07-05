@@ -1,11 +1,14 @@
 /* (C)2020-2022 */
 package com.follybuilders.paradisium;
 
+import com.follybuilders.paradisium.effects.ParadisiumBaseEffect;
+import com.follybuilders.paradisium.pattern.ParadisiumBasePattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXPlugin;
 import heronarts.lx.studio.LXStudio;
 import java.io.File;
 import javax.annotation.Nullable;
+import org.reflections.Reflections;
 import processing.core.PApplet;
 
 /**
@@ -15,7 +18,9 @@ import processing.core.PApplet;
  */
 public class ParadisiumApp extends PApplet implements LXPlugin {
 
-  private static final String WINDOW_TITLE = "LX Studio";
+  private static final String WINDOW_TITLE = "Paradisium";
+
+  Reflections reflections = new Reflections("com.follybuilders");
 
   private static int WIDTH = 1280;
   private static int HEIGHT = 800;
@@ -57,7 +62,9 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
     // you cannot assume you are working with an LXStudio class or that any UI will be
     // available.
 
-    // Register custom pattern and effect types
+    // NOTE(G3): Magic use of reflections to load all effects and patterns ;)
+    reflections.getSubTypesOf(ParadisiumBaseEffect.class).forEach(lx.registry::addEffect);
+    reflections.getSubTypesOf(ParadisiumBasePattern.class).forEach(lx.registry::addPattern);
   }
 
   public void initializeUI(LXStudio lx, LXStudio.UI ui) {
