@@ -47,6 +47,8 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
     flags.resizable = true;
     flags.useGLPointCloud = false;
     flags.startMultiThreaded = true;
+    flags.mediaPath = "/home/geethree/repos/paradisium";
+    flags.isP4LX = true;
 
     new LXStudio(this, flags);
     this.surface.setTitle(WINDOW_TITLE);

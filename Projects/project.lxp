@@ -1,6 +1,6 @@
 {
-  "version": "0.4.0",
-  "timestamp": 1656148348292,
+  "version": "0.4.1",
+  "timestamp": 1657051842626,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -194,7 +194,7 @@
           "scene-3": false,
           "scene-4": false,
           "scene-5": false,
-          "crossfader": 0.4576271176338196,
+          "crossfader": 1.0,
           "crossfaderBlendMode": 1,
           "focusedChannel": 1,
           "cueA": false,
@@ -256,7 +256,7 @@
             "patterns": [
               {
                 "id": 13689,
-                "class": "LXStudio$RGBPattern",
+                "class": "com.follybuilders.paradisium.pattern.test.RGBPattern",
                 "internal": {
                   "modulationColor": 0,
                   "expanded": true,
@@ -410,7 +410,7 @@
             "patterns": [
               {
                 "id": 13691,
-                "class": "LXStudio$WhitePattern",
+                "class": "com.follybuilders.paradisium.pattern.test.WhitePattern",
                 "internal": {
                   "modulationColor": 0,
                   "expanded": true,
@@ -586,7 +586,9 @@
         },
         "parameters": {
           "label": "LX",
-          "computerKeyboardEnabled": true
+          "computerKeyboardEnabled": true,
+          "computerKeyboardOctave": 5,
+          "computerKeyboardVelocity": 5
         },
         "children": {},
         "inputs": [],
@@ -708,8 +710,8 @@
         "camera": {
           "active": false,
           "radius": 1687.4039419227993,
-          "theta": -0.017198434099555016,
-          "phi": -0.03783670999109745,
+          "theta": 0.040269723162055016,
+          "phi": -0.9737467123195529,
           "x": 612.542172858325,
           "y": -619.098620057106,
           "z": 148.20150306614545
@@ -718,8 +720,8 @@
           {
             "active": false,
             "radius": 1687.4039419227993,
-            "theta": -0.017198434099555016,
-            "phi": -0.03783670999109745,
+            "theta": 0.040269723162055016,
+            "phi": -0.9737467123195529,
             "x": 612.542172858325,
             "y": -619.098620057106,
             "z": 148.20150306614545
@@ -772,7 +774,7 @@
         ],
         "focus": 0,
         "pointCloud": {
-          "pointSize": 3.0
+          "pointSize": 10.0
         },
         "grid": {
           "visible": false,
