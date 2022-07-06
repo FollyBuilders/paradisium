@@ -1,4 +1,4 @@
-/* (C)2022 */
+/* (C) 2022 */
 package com.follybuilders.paradisium;
 
 import static org.junit.jupiter.api.Assertions.*;

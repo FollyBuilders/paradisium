@@ -14,10 +14,20 @@ java {
 
 repositories {
 	mavenCentral()
+	maven {
+		url = "https://jitpack.io"
+	}
 }
 
 dependencies {
-	implementation fileTree(dir: 'third-party/lxstudio-ide/lib', include: ['**/*.jar'])
+	implementation fileTree(dir: 'third-party/lxstudio-ide/lib/processing-4.0b8', include: [
+		'gluegen-rt-4.0b8.jar',
+		'jogl-all-4.0b8.jar',
+	])
+
+	implementation group: 'com.heronarts', name: 'lxstudio', version: '0.4.1'
+	implementation group: "com.github.micycle1", name: 'processing-core-4', version: '4.0b8'
+
 
 	implementation group: 'org.reflections', name: 'reflections', version: '0.10.2'
 	implementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.7.36'
@@ -33,11 +43,6 @@ testing {
 		}
 	}
 }
-
-test {
-	testLogging.showStandardStreams = true
-}
-
 
 application {
 	mainClass = 'com.follybuilders.paradisium.ParadisiumApp'
@@ -56,7 +61,9 @@ spotless {
 		greclipse()
 	}
 	java {
+		importOrder()
 		googleJavaFormat()
-		licenseHeader '/* (C)$YEAR */'
+		removeUnusedImports()
+		licenseHeader('/* (C) $YEAR */', 'package ')
 	}
 }

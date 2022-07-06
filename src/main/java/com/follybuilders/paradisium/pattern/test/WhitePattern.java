@@ -1,4 +1,4 @@
-/* (C)2022 */
+/* (C) 2022 */
 package com.follybuilders.paradisium.pattern.test;
 
 import com.follybuilders.paradisium.ParadisiumCategory;

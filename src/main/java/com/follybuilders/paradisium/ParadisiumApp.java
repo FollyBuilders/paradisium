@@ -1,4 +1,4 @@
-/* (C)2020-2022 */
+/* (C) 2020-2022 */
 package com.follybuilders.paradisium;
 
 import com.follybuilders.paradisium.effects.ParadisiumBaseEffect;
