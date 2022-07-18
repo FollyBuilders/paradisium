@@ -8,16 +8,14 @@ import heronarts.lx.LXCategory;
 import heronarts.lx.model.LXModel;
 
 @LXCategory(ParadisiumCategory.TESTPATTERN)
-public class RGBPattern extends ParadisiumBasePattern {
+public class UltravioletPattern extends LXPattern {
 
-  public RGBPattern(LX lx) {
-    super(lx);
-  }
+    public UltravioletPattern(LX lx) {super(lx);}
 
-  public void run(double deltaMs) {
-    String tag = "RGB";
-    for (LXModel strip : model.sub(tag)) {
-      setColor(strip, 0xffffffff);
+    public void run(double deltaMs) {
+        String tag = "UV";
+        for (LXModel strip : model.sub(tag)) {
+            setColor(strip, 0xff0000ff);
+        }
     }
-  }
 }
