@@ -15,7 +15,6 @@ public class WhitePattern extends ParadisiumBasePattern {
   }
 
   public void run(double deltaMs) {
-
     String tag = "WHITE";
     for (LXModel strip : model.sub(tag)) {
       setColor(strip, 0xffff0000);
