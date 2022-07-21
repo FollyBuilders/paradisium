@@ -3,9 +3,9 @@
 "tags": ["RGB"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": 211.17691 , "y": -761.42285, "z": 0.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": 191.25833 , "y": -928.80743, "z": 192.0, "numPoints": 1, "spacing": 1 } 
 
 ],
-"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 180, "num": 1}],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 180, "num": 1}],
 "meta": {"key1": "val2", "key3": "val4"}
 }
