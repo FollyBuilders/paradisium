@@ -10,6 +10,8 @@ import java.io.File;
 import javax.annotation.Nullable;
 import org.reflections.Reflections;
 import processing.core.PApplet;
+import java.util.ArrayList;
+import com.follybuilders.paradisium.props.*;
 
 /**
  * This is an example top-level class to build and run an LX Studio application via an IDE. The
@@ -30,6 +32,9 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
   private static int WINDOW_Y = 0;
 
   private static boolean HAS_WINDOW_POSITION = false;
+
+  private ArrayList<File> objFiles = null;
+  VisibilityParameterHelper visibilityHelper = null;
 
   @Override
   public void settings() {
@@ -65,6 +70,18 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
     // NOTE(G3): Magic use of reflections to load all effects and patterns ;)
     reflections.getSubTypesOf(ParadisiumBaseEffect.class).forEach(lx.registry::addEffect);
     reflections.getSubTypesOf(ParadisiumBasePattern.class).forEach(lx.registry::addPattern);
+
+    File dataDirectory = new File(System.getProperty("user.dir") + File.separator + "OBJs");
+    if (dataDirectory == null) {  //TODO: THIS DOES NOT WORK AS EXPECTED WHEN data DOES NOT EXIST
+      LX.error(" directory does not exist in root director");
+      objFiles = new ArrayList<>();  // create empty lists to avoid null pointer later
+    } else {
+      objFiles = getFilesWithExtension(dataDirectory, ".obj");
+    }
+    visibilityHelper = new VisibilityParameterHelper();
+    visibilityHelper.addFoundFiles(objFiles);
+    lx.engine.registerComponent("visibilityHelper",visibilityHelper);
+
   }
 
   public void initializeUI(LXStudio lx, LXStudio.UI ui) {
@@ -76,6 +93,9 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
   public void onUIReady(LXStudio lx, LXStudio.UI ui) {
     // At this point, the LX Studio application UI has been built. You may now add
     // additional views and components to the UI hierarchy.
+    UIPropList pl = new UIPropList(lx,ui,ui.leftPane.global.getWidth(),objFiles,visibilityHelper);
+    pl.addToContainer(ui.leftPane.global);
+
   }
 
   @Override
@@ -156,4 +176,22 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
 
     return flags;
   }
+
+  private ArrayList<File> getFilesWithExtension(File file, String suffix) {
+    if (file.isDirectory()) {
+      String names[] = file.list();
+      ArrayList<File> files = new ArrayList<File>();
+      for (int i = 0 ; i < names.length ; i++) {
+        if (names[i].endsWith(suffix.toLowerCase()) || names[i].endsWith(suffix.toUpperCase())) {
+          files.add(new File((file.getAbsolutePath() + File.separator + names[i])));
+        }
+      }
+      return files;
+    } else {
+      LX.error("path passed into getFilesWithExtension is not a directory");
+      return null;
+    }
+  }
+
+
 }
