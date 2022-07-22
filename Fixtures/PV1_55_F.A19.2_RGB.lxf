@@ -1,11 +1,10 @@
 {
 "label": "F.A19.2_RGB",
-"tags": ["RGB"],
+"tags": ["T.19.2.RGB", "RGB"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": 731.2583 , "y": -928.80743, "z": 144.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": -731.2583 , "y": -928.80743, "z": 144.0, "numPoints": 1, "spacing": 1 } 
 
 ],
-"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 324, "num": 1}],
-"meta": {"key1": "val2", "key3": "val4"}
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 324, "num": 1}]
 }

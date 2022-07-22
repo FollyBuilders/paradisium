@@ -1,11 +1,10 @@
 {
 "label": "F.B18.2_WHITE",
-"tags": ["WHITE"],
+"tags": ["T.18.2.WHITE", "WHITE"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": 599.2583 , "y": -1162.6343, "z": 192.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": -593.2583 , "y": -1162.6343, "z": 192.0, "numPoints": 1, "spacing": 1 } 
 
 ],
-"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 309, "num": 1}],
-"meta": {"key1": "val2", "key3": "val4"}
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 309, "num": 1}]
 }

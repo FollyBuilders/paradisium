@@ -1,11 +1,10 @@
 {
 "label": "F.B14.6_RGB",
-"tags": ["RGB"],
+"tags": ["T.14.6.RGB", "RGB"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": 168.74167 , "y": -1240.5765, "z": 192.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": -168.74167 , "y": -1240.5765, "z": 192.0, "numPoints": 1, "spacing": 1 } 
 
 ],
-"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 246, "num": 1}],
-"meta": {"key1": "val2", "key3": "val4"}
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 246, "num": 1}]
 }

@@ -1,11 +1,10 @@
 {
 "label": "F.A21.2_WHITE",
-"tags": ["WHITE"],
+"tags": ["T.21.2.WHITE", "WHITE"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": 869.2583 , "y": -694.9805, "z": 144.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": -863.2583 , "y": -694.9805, "z": 144.0, "numPoints": 1, "spacing": 1 } 
 
 ],
-"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 363, "num": 1}],
-"meta": {"key1": "val2", "key3": "val4"}
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 363, "num": 1}]
 }
