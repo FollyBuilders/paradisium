@@ -10,12 +10,14 @@ import heronarts.lx.model.LXModel;
 @LXCategory(ParadisiumCategory.RGBWAUVPATTERN)
 public class AmberPattern extends ParadisiumBasePattern {
 
-    public AmberPattern(LX lx) {super(lx);}
+  public AmberPattern(LX lx) {
+    super(lx);
+  }
 
-    public void run(double deltaMs) {
-        String tag = "WHITE";
-        for (LXModel strip : model.sub(tag)) {
-            setColor(strip, 0xff00ff00);
-        }
+  public void run(double deltaMs) {
+    String tag = "WHITE";
+    for (LXModel strip : model.sub(tag)) {
+      setColor(strip, 0xff00ff00);
     }
+  }
 }
