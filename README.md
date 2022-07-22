@@ -1,5 +1,7 @@
 # Burning Man 2022 - Paradisium
 ![](docs/assets/paradisium.jpg)
+![image](https://user-images.githubusercontent.com/4576814/180364483-1789628d-f849-4a53-93ef-6188105ae73f.png)
+
 
 # How To
 
