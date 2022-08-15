@@ -1,8 +1,7 @@
 /* (C)2022 */
-package com.follybuilders.paradisium.pattern.test;
+package com.follybuilders.paradisium.pattern;
 
 import com.follybuilders.paradisium.ParadisiumCategory;
-import com.follybuilders.paradisium.pattern.ParadisiumBasePattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.model.LXModel;
