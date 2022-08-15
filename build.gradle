@@ -13,7 +13,11 @@ java {
 }
 
 repositories {
-	mavenCentral()
+	maven{
+		url="http://localhost:8081/nexus/content/repositories/central/"
+		allowInsecureProtocol = true
+	}
+	// mavenCentral()
 }
 
 dependencies {
@@ -42,6 +46,7 @@ test {
 application {
 	mainClass = 'com.follybuilders.paradisium.ParadisiumApp'
 }
+
 
 spotless {
 	format 'misc', {
