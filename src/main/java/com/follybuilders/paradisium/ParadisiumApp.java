@@ -6,8 +6,11 @@ import com.follybuilders.paradisium.pattern.ParadisiumBasePattern;
 import com.follybuilders.paradisium.props.*;
 import heronarts.lx.LX;
 import heronarts.lx.LXPlugin;
+import heronarts.lx.output.ArtNetDatagram;
 import heronarts.lx.studio.LXStudio;
 import java.io.File;
+import java.net.InetAddress;
+import java.net.UnknownHostException;
 import java.util.ArrayList;
 import javax.annotation.Nullable;
 import org.reflections.Reflections;
@@ -59,6 +62,8 @@ public class ParadisiumApp extends PApplet implements LXPlugin {
       this.surface.setLocation(WINDOW_X, WINDOW_Y);
     }
   }
+
+  final String ARTNET_IP = "192.168.2.25";
 
   @Override
   public void initialize(LX lx) {
