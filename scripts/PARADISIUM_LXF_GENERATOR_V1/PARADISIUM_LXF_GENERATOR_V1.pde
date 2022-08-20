@@ -1,35 +1,51 @@
+/* LXF Generator for Paradisium
+// by John Parts Taylor
+// 
+// This script is for use with LX Studio and generates the custom LXF files 
+// that go in the Fixtures directory of a geometrically complex LX project.
+//
+// Once generated, the LXF files are easily modified with a regular text editor.
+// Small changes such as swapping IP addresses, universe numbers, or DMX base address 
+// should just be done in the text files. 
+//
+// Double-click in the window to reset the camera view if it gets tumbled to a weird angle.
+//
+// TODO:
+// - get Z height of fixtures for each tree type/size
+// - maybe figure out a directional vector for easy export to WYG ?
+// 
+*/
 
-// import peasy.*;
-// PeasyCam cam;
+import peasy.*;  
+PeasyCam cam;  
+final static boolean USE_PEASY_CAM = true;
 
 final static float HEXGRID_RADIUS = 90; // inches 
 final static float FIXTURE_RADIUS = 36; // inches
 
 ArrayList<Tree3D> trees = new ArrayList<Tree3D>();
 
-final static int SIZE_X = 9;
-final static int SIZE_Y = 8;
+final static int GRID_SIZE_X = 9;
+final static int GRID_SIZE_Y = 8;
 
 void setup() {
-  //cam = new PeasyCam(this, 400); 
-  size(840,840,P3D);
-  textFont(createFont("Zurich Extra Black Bttf", 32));
+  if (USE_PEASY_CAM) {
+    cam = new PeasyCam(this , width * 0.5 - 20, height * 0.5 + 30, 0, 600);
+  }
+  size(900,900,P3D);
   defineHexGrid();
   dumpCSV();  
-  dumpPointFile("_RGB",0);
+  //dumpPointFile("_RGB",0);  // depricated. was for inital hexgrid testing only
   dumpMainFile();
   dumpFixtureFiles();
 }
 
 void draw() {
   background(0);
+  // do some matrix scaling and translation so we can stay in inches for units and still see it in viewport
   pushMatrix();
-  translate(HEXGRID_RADIUS,HEXGRID_RADIUS);
-  scale(0.5);
-  // draw origin
-  //fill(255,0,0);
-  //ellipse(0,0,1,1);
-  // draw everything
+  translate(HEXGRID_RADIUS*1.5,HEXGRID_RADIUS*2);  // nudge the layout over in the viewport
+  scale(0.4); 
   drawTreeHexagons();
   drawTreeFixtures();
   drawTreeLabels();
@@ -37,38 +53,38 @@ void draw() {
 }
 
 void defineHexGrid() {
-  // These are created in an order that was based on the hex grid coordinate system
-  // This should make it easy to adapt to any last minute layout changes
-  trees.add(new Tree3D("A1",1,0,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));  
-  trees.add(new Tree3D("B2",2,0,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_1));  
-  trees.add(new Tree3D("E3",3,0,TreeTypeEnum.TYPE_E,TreeClusterEnum.CLUSTER_1));    
-  trees.add(new Tree3D("A4",4,0,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));    
-  trees.add(new Tree3D("B5",4,1,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_1));      
-  trees.add(new Tree3D("A6",4,2,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));      
-  trees.add(new Tree3D("D7",3,2,TreeTypeEnum.TYPE_D,TreeClusterEnum.CLUSTER_1));      
-  trees.add(new Tree3D("A8",2,2,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));      
-  trees.add(new Tree3D("B9",1,2,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_1));      
-  trees.add(new Tree3D("A10",2,4,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("B11",1,4,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("A12",0,5,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("C13",1,5,TreeTypeEnum.TYPE_C,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("B14",1,6,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("A15",2,7,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("A16",3,5,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("D17",3,4,TreeTypeEnum.TYPE_D,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("B18",4,6,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_2));      
-  trees.add(new Tree3D("A19",5,4,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("D20",5,3,TreeTypeEnum.TYPE_D,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("A21",6,3,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("B22",6,2,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("B23",6,5,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("A24",7,5,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("C25",7,4,TreeTypeEnum.TYPE_C,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("B26",8,4,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_3));      
-  trees.add(new Tree3D("A27",8,3,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
+  // these have been reordered to reflect the naming convention of the trees by the design team
+  trees.add(new Tree3D("A1",0,0,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));  
+  trees.add(new Tree3D("B2",2,1,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_1));  
+  trees.add(new Tree3D("E3",3,1,TreeTypeEnum.TYPE_E,TreeClusterEnum.CLUSTER_1));    
+  trees.add(new Tree3D("A4",4,1,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));    
+  trees.add(new Tree3D("B5",4,2,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_1));      
+  trees.add(new Tree3D("A6",4,3,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));      
+  trees.add(new Tree3D("D7",3,3,TreeTypeEnum.TYPE_D,TreeClusterEnum.CLUSTER_1));      
+  trees.add(new Tree3D("A8",2,3,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_1));      
+  trees.add(new Tree3D("B9",1,3,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_1));      
+  trees.add(new Tree3D("A10",2,5,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("B11",1,5,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("A12",0,6,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("C13",1,6,TreeTypeEnum.TYPE_C,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("B14",1,7,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("A15",1,9,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("A16",3,6,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("D17",3,5,TreeTypeEnum.TYPE_D,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("B18",4,7,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_2));      
+  trees.add(new Tree3D("A19",5,5,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("D20",5,4,TreeTypeEnum.TYPE_D,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("A21",6,4,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("B22",6,3,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("B23",6,6,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("A24",7,6,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("C25",7,5,TreeTypeEnum.TYPE_C,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("B26",8,5,TreeTypeEnum.TYPE_B,TreeClusterEnum.CLUSTER_3));      
+  trees.add(new Tree3D("A27",10,4,TreeTypeEnum.TYPE_A,TreeClusterEnum.CLUSTER_3));      
 }
 
 void drawTreeHexagons() {
+  // draw the hexagon grid  
   for (Tree3D t : trees) {
     stroke(255);
     strokeWeight(2);
@@ -123,6 +139,7 @@ void dumpMainFile() {
 void dumpFixtureFiles() {
   int fixtureCount = 0;
   for (Tree3D t : trees) {
+    dumpTree(t);
     for (Fixture3D f : t.fixtures) {  
       dumpFixture(f,"RGB",0,fixtureCount);
       dumpFixture(f,"WHITE",3,fixtureCount);
@@ -131,47 +148,27 @@ void dumpFixtureFiles() {
   }
 }
 
+void dumpTree(Tree3D f) {
+
+}
+
 void dumpFixture(Fixture3D f,String suffix,int offset,int fixtureCount) {
   java.io.PrintWriter out1 = createWriter("PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_" + suffix +".lxf");
   out1.write("{\n");
   out1.write("\"label\": \"" + f.id()  + "_" + suffix + "\",\n");  
   out1.write("\"tags\": [");
+  out1.write("\"" + "T." + ((fixtureCount/3) + 1) + "." + (((((f.dmx - 1) % 18) / 6) * 2) + 2)  + "." + suffix + "\"");
+  out1.write(", ");
+  
   out1.write("\"" + suffix +  "\"");
   out1.write("],\n");
   out1.write("\"parameters\": {},\n");
   out1.write("\"components\": [ \n");    
-  out1.write("{ \"type\": \"strip\", \"x\": " + (f.x + offset) + " , \"y\": " + (-1.0 * f.y) + ", \"z\": " + f.z + ", \"numPoints\": " + 1 + ", \"spacing\": " + 1 + " } \n");
+  out1.write("{ \"type\": \"strip\", \"x\": " + (-1.0 * f.x + offset) + " , \"y\": " + (-1.0 * f.y) + ", \"z\": " + f.z + ", \"numPoints\": " + 1 + ", \"spacing\": " + 1 + " } \n");
   out1.write("\n],\n");
-  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"127.0.0.1\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}],\n");
-  out1.write("\"meta\": {\"key1\": \"val2\", \"key3\": \"val4\"}\n");
+  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"10.10.10.222\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}]\n");
   out1.write("}\n"); 
   out1.close();  
-}
-
-
-void dumpPointFile(String suffix, int offset) {
-  java.io.PrintWriter out1 = createWriter("Paradisium_1_Points" + suffix + ".lxf");
-  out1.write("{\n");
-  out1.write("\"label\": \"Paradisium_1_Points" + suffix + "\",\n");
-  out1.write("\"tags\": [ \"Paradisium_1_Points" + suffix + "\" ],\n");
-  out1.write("\"parameters\": {},\n");
-  out1.write("\"components\": [ \n");  
-  int totalFixtures = trees.size() * 3;
-  int fixtureCount = 0;
-  for (Tree3D t : trees) {
-    for (Fixture3D f : t.fixtures) {  
-      out1.write("{ \"type\": \"points\", \"coords\": [ { \"x\":" + f.x + ", \"y\": " + (-1.0 * f.y) + ", \"z\": " + f.z + " } ] }");
-      if (fixtureCount != totalFixtures - 1) {
-         out1.write(",\n");
-      }
-      fixtureCount++;
-    }    
-  }
-  out1.write("\n],\n");  
-  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"127.0.0.1\", \"start\": " + (0+offset) + ", \"num\": " + fixtureCount  + ", \"stride\": " + 1 + "}],\n");
-  out1.write("\"meta\": {\"key1\": \"val2\", \"key3\": \"val4\"}\n");
-  out1.write("}\n");
-  out1.close();
 }
 
 void drawTreeLabels() {
@@ -243,12 +240,24 @@ class Tree3D {
     centerY = (((0.5 * ((gridX % 2) + 1)) * hexH) + (gridY * hexH)); 
     id = sid;
     type = tt;
+    float fz = 0.0; // definitely look this up based on tree type   
     fr = FIXTURE_RADIUS; // maybe look this up based on tree type?
+      switch(type) {
+        case TYPE_A:
+          fz = 12 * 12; fr = 26 / 2; break;
+        case TYPE_B:
+          fz = 16 * 12; fr = 26 / 2; break;
+        case TYPE_C:
+          fz = 21 * 12; fr = 26 / 2; break;
+        case TYPE_D:
+          fz = 23 * 12; fr = 50 / 2; break;
+        case TYPE_E:
+          fz = 23 * 12; fr = 50 / 2; break;
+      }
     cluster = tc;
     for (int i = 0 ; i < 3 ; i++) {
       float fx = centerX + (cos(radians(-30 - i * -120)) * fr);
-      float fy = centerY + (sin(radians(-30 - i * -120)) * fr);      
-      float fz = 0.0; // look this up based on tree type ??? 
+      float fy = centerY + (sin(radians(-30 - i * -120)) * fr);
       fixtures.add(new Fixture3D(this,fx,fy,fz,2+i*2));
     }
   }
@@ -268,7 +277,9 @@ enum TreeClusterEnum {
   CLUSTER_3;
 }
 
+//////////////////////////////////////////
 //// OLD STUFF
+//////////////////////////////////////////
 
 //void drawBackground() {
 //  // BASED ON "ODD-Q" LAYOUT
@@ -310,7 +321,7 @@ enum TreeClusterEnum {
 //    stroke(255);
 //  }
 //  //ellipse(centerPointX,centerPointY,HEXGRID_RADIUS*0.25,HEXGRID_RADIUS*0.25);
-  
+//  
 //  // draw light positions
 //  //stroke(255);
 //  //strokeWeight(4);
@@ -332,4 +343,29 @@ enum TreeClusterEnum {
 //    vertex(centerPointX + (cos(radians(j*60)) * HEXGRID_RADIUS),centerPointY + (sin(radians(j*60)) * HEXGRID_RADIUS),0);     
 //  }
 //  endShape(CLOSE);    
+//}
+
+//void dumpPointFile(String suffix, int offset) {
+//  java.io.PrintWriter out1 = createWriter("Paradisium_1_Points" + suffix + ".lxf");
+//  out1.write("{\n");
+//  out1.write("\"label\": \"Paradisium_1_Points" + suffix + "\",\n");
+//  out1.write("\"tags\": [ \"Paradisium_1_Points" + suffix + "\" ],\n");
+//  out1.write("\"parameters\": {},\n");
+//  out1.write("\"components\": [ \n");  
+//  int totalFixtures = trees.size() * 3;
+//  int fixtureCount = 0;
+//  for (Tree3D t : trees) {
+//    for (Fixture3D f : t.fixtures) {  
+//      out1.write("{ \"type\": \"points\", \"coords\": [ { \"x\":" + f.x + ", \"y\": " + (-1.0 * f.y) + ", \"z\": " + f.z + " } ] }");
+//      if (fixtureCount != totalFixtures - 1) {
+//         out1.write(",\n");
+//      }
+//      fixtureCount++;
+//    }    
+//  }
+//  out1.write("\n],\n");  
+//  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"127.0.0.1\", \"start\": " + (0+offset) + ", \"num\": " + fixtureCount  + ", \"stride\": " + 1 + "}],\n");
+//  out1.write("\"meta\": {\"key1\": \"val2\", \"key3\": \"val4\"}\n");
+//  out1.write("}\n");
+//  out1.close();
 //}
