@@ -20,6 +20,9 @@ public class SpiralEffect extends ParadisiumBaseEffect {
 
   public SpiralEffect(LX lx) {
     super(lx);
+    addParameter("basePetalParam", basePetalParam);
+    addParameter("lefthanded", leftSpiralParam);
+    addParameter("righthanded", rightSpiralParam);
   }
 
   public void run(double deltaMs, double enabledAmount) {

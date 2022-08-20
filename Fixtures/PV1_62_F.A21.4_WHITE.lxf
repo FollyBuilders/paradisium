@@ -6,6 +6,6 @@
 { "type": "strip", "x": 858.0 , "y": -714.4805, "z": 144.0, "numPoints": 1, "spacing": 1 } 
 
 ],
-"outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 369, "num": 1}],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "192.168.2.51", "channel": 369, "num": 1}],
 "meta": {"key1": "val2", "key3": "val4"}
 }

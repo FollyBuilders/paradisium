@@ -1,0 +1,11 @@
+{
+"label": "F.D17.4_WHITE",
+"tags": ["WHITE"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": 453.0 , "y": 804.42285, "z": 276.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 297, "num": 1}],
+"meta": {"key1": "val2", "key3": "val4"}
+}

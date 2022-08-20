@@ -1,0 +1,11 @@
+{
+"label": "F.A27.2_RGB",
+"tags": ["RGB"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": 1136.2583 , "y": 539.09595, "z": 144.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 468, "num": 1}],
+"meta": {"key1": "val2", "key3": "val4"}
+}

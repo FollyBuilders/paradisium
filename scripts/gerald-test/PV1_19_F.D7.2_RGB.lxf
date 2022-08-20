@@ -1,0 +1,11 @@
+{
+"label": "F.D7.2_RGB",
+"tags": ["RGB"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": 471.65063 , "y": 455.1537, "z": 276.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 108, "num": 1}],
+"meta": {"key1": "val2", "key3": "val4"}
+}
