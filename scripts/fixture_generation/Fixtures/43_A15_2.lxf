@@ -1,0 +1,30 @@
+{
+  "label": "43_A15_2",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "A15",
+    "id": 43,
+    "programming_channel": 253,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "43_A15_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "43_A15_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

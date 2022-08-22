@@ -1,0 +1,30 @@
+{
+  "label": "45_A15_6",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "A15",
+    "id": 43,
+    "programming_channel": 265,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "45_A15_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "45_A15_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "label": "80_A27_4",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "A27",
+    "id": 79,
+    "programming_channel": 475,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "80_A27_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "80_A27_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

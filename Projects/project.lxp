@@ -1095,7 +1095,7 @@
         ],
         "focus": 0,
         "pointCloud": {
-          "pointSize": 3.0
+          "pointSize": 15.0
         },
         "grid": {
           "visible": false,

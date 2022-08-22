@@ -1,0 +1,30 @@
+{
+  "label": "51_D17_6",
+  "tags": [
+    "type_d",
+    "face_6",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "D17",
+    "id": 49,
+    "programming_channel": 301,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "51_D17_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "51_D17_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

@@ -1,0 +1,30 @@
+{
+  "label": "50_D17_4",
+  "tags": [
+    "type_d",
+    "face_4",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "D17",
+    "id": 49,
+    "programming_channel": 295,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "50_D17_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "50_D17_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

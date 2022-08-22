@@ -1,0 +1,30 @@
+{
+  "label": "27_B9_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B9",
+    "id": 25,
+    "programming_channel": 157,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "27_B9_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "27_B9_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

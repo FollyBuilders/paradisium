@@ -1,0 +1,34 @@
+{
+  "label": "23_A8_4_WAUV",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_1",
+    "WAUV"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 315.0,
+          "y": 415.7114317029974,
+          "z": 144
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 136,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "label": "40_B14_2",
+  "tags": [
+    "type_b",
+    "face_2",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "B14",
+    "id": 40,
+    "programming_channel": 235,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "40_B14_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "40_B14_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

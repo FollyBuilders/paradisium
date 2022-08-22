@@ -1,0 +1,30 @@
+{
+  "label": "25_B9_2",
+  "tags": [
+    "type_b",
+    "face_2",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "B9",
+    "id": 25,
+    "programming_channel": 145,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "25_B9_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "25_B9_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

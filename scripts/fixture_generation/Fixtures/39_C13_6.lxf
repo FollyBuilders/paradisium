@@ -1,0 +1,30 @@
+{
+  "label": "39_C13_6",
+  "tags": [
+    "type_c",
+    "face_6",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "C13",
+    "id": 37,
+    "programming_channel": 229,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "39_C13_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "39_C13_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

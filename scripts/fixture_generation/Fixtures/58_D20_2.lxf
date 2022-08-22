@@ -1,0 +1,30 @@
+{
+  "label": "58_D20_2",
+  "tags": [
+    "type_d",
+    "face_2",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "D20",
+    "id": 58,
+    "programming_channel": 343,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "58_D20_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "58_D20_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

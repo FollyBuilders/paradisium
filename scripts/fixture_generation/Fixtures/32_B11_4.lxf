@@ -1,0 +1,30 @@
+{
+  "label": "32_B11_4",
+  "tags": [
+    "type_b",
+    "face_4",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "B11",
+    "id": 31,
+    "programming_channel": 187,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "32_B11_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "32_B11_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

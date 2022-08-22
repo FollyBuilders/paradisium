@@ -1,0 +1,30 @@
+{
+  "label": "60_D20_6",
+  "tags": [
+    "type_d",
+    "face_6",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "D20",
+    "id": 58,
+    "programming_channel": 355,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "60_D20_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "60_D20_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

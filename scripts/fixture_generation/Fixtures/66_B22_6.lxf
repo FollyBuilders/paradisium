@@ -1,0 +1,30 @@
+{
+  "label": "66_B22_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B22",
+    "id": 64,
+    "programming_channel": 391,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "66_B22_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "66_B22_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

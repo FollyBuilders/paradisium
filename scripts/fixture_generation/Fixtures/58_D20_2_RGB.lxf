@@ -1,0 +1,34 @@
+{
+  "label": "58_D20_2_RGB",
+  "tags": [
+    "type_d",
+    "face_2",
+    "cluster_3",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 741.650635094611,
+          "y": 611.0382907247958,
+          "z": 276
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 343,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

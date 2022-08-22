@@ -1,0 +1,30 @@
+{
+  "label": "46_A16_2",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "A16",
+    "id": 46,
+    "programming_channel": 271,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "46_A16_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "46_A16_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

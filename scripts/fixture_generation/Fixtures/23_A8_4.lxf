@@ -1,0 +1,30 @@
+{
+  "label": "23_A8_4",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "A8",
+    "id": 22,
+    "programming_channel": 133,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "23_A8_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "23_A8_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

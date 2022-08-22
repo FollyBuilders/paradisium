@@ -1,0 +1,34 @@
+{
+  "label": "9_E3_6_RGB",
+  "tags": [
+    "type_e",
+    "face_6",
+    "cluster_1",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 428.34936490538905,
+          "y": 143.38457268119896,
+          "z": 276
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 49,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "label": "6_B2_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B2",
+    "id": 4,
+    "programming_channel": 31,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "6_B2_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "6_B2_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

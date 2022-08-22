@@ -1,0 +1,34 @@
+{
+  "label": "38_C13_4_RGB",
+  "tags": [
+    "type_c",
+    "face_4",
+    "cluster_2",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 180.0,
+          "y": 948.3074360871938,
+          "z": 252
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 223,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "label": "28_A10_2",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "A10",
+    "id": 28,
+    "programming_channel": 163,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "28_A10_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "28_A10_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

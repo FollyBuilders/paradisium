@@ -1,0 +1,30 @@
+{
+  "label": "65_B22_4",
+  "tags": [
+    "type_b",
+    "face_4",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "B22",
+    "id": 64,
+    "programming_channel": 385,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "65_B22_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "65_B22_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

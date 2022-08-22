@@ -1,0 +1,30 @@
+{
+  "label": "22_A8_2",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "A8",
+    "id": 22,
+    "programming_channel": 127,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "22_A8_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "22_A8_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

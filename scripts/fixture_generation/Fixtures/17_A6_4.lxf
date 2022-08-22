@@ -1,0 +1,30 @@
+{
+  "label": "17_A6_4",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "A6",
+    "id": 16,
+    "programming_channel": 97,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "17_A6_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "17_A6_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

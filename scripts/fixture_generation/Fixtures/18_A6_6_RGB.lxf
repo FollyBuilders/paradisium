@@ -1,0 +1,34 @@
+{
+  "label": "18_A6_6_RGB",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_1",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 562.4833395016046,
+          "y": 376.7114317029974,
+          "z": 144
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 103,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

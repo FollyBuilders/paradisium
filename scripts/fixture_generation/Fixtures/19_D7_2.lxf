@@ -1,0 +1,30 @@
+{
+  "label": "19_D7_2",
+  "tags": [
+    "type_d",
+    "face_2",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "D7",
+    "id": 19,
+    "programming_channel": 109,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "19_D7_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "19_D7_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

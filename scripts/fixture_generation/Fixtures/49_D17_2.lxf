@@ -1,0 +1,30 @@
+{
+  "label": "49_D17_2",
+  "tags": [
+    "type_d",
+    "face_2",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "D17",
+    "id": 49,
+    "programming_channel": 289,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "49_D17_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "49_D17_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

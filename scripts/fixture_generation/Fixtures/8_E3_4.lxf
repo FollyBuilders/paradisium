@@ -1,0 +1,30 @@
+{
+  "label": "8_E3_4",
+  "tags": [
+    "type_e",
+    "face_4",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "E3",
+    "id": 7,
+    "programming_channel": 43,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "8_E3_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "8_E3_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

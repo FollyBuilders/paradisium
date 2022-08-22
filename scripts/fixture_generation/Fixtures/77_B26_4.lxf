@@ -1,0 +1,30 @@
+{
+  "label": "77_B26_4",
+  "tags": [
+    "type_b",
+    "face_4",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "B26",
+    "id": 76,
+    "programming_channel": 457,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "77_B26_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "77_B26_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

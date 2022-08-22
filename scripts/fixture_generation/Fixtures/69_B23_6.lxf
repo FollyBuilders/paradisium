@@ -1,0 +1,30 @@
+{
+  "label": "69_B23_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B23",
+    "id": 67,
+    "programming_channel": 409,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "69_B23_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "69_B23_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

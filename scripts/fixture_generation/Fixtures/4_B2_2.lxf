@@ -1,0 +1,30 @@
+{
+  "label": "4_B2_2",
+  "tags": [
+    "type_b",
+    "face_2",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "B2",
+    "id": 4,
+    "programming_channel": 19,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "4_B2_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "4_B2_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

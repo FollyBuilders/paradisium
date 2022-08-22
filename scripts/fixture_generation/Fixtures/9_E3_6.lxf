@@ -1,0 +1,30 @@
+{
+  "label": "9_E3_6",
+  "tags": [
+    "type_e",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "E3",
+    "id": 7,
+    "programming_channel": 49,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "9_E3_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "9_E3_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

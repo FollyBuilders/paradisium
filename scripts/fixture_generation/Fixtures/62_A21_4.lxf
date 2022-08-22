@@ -1,0 +1,30 @@
+{
+  "label": "62_A21_4",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "A21",
+    "id": 61,
+    "programming_channel": 367,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "62_A21_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "62_A21_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

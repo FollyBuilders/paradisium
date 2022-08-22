@@ -6,10 +6,11 @@ from sheds_fixture import ShedFixture
 HEXGRID_RADIUS_IN = 90
 
 class Tree:
-    def __init__(self, label, channel_start, gx, gy, tree_type, tree_cluster):
+    def __init__(self, label, id, channel_start, gx, gy, tree_type, tree_cluster):
         self.grid_x = gx
         self.grid_y = gy
         self.label = label
+        self.id = id
         self.channel_start = channel_start
         self.tree_type = tree_type
         self.tree_cluster = tree_cluster
@@ -26,7 +27,7 @@ class Tree:
     
     def get_fixture_params(self):
         if self.tree_type == TreeTypes.TYPE_A:
-            fr = 26 / 2
+            fr = 26 
             fz = 12 * 12
             return fr, fz
         elif self.tree_type == TreeTypes.TYPE_B:
@@ -53,16 +54,26 @@ class Tree:
         fr, fz = self.get_fixture_params()
         for i in range(3):
             fx = self.center_x + (math.cos(math.radians(-30 - i * -120)) * fr)
-            fy = self.center_y + (math.sin(math.radians(-30 - i * -120)) *fz)
+            fy = self.center_y + (math.sin(math.radians(-30 - i * -120)) * fr)
             fz = fz
-            print(self.label, self.hexgrid_w, self.hexgrid_h, fx, fy)
+            face_index = 2 * i + 2 # NOTE(G3): 6 faces, ever other strat with 2, 4, 6
             fix = ShedFixture(
-                label="{}_{}".format(self.label, i),
+                label="{}_{}".format(self.label, face_index),
                 x=fx,
                 y=fy,
                 z=fz,
-                channel_start=1+i*6+i*self.channel_start,
-                tags = [self.tree_type.value]
+                id = self.id + i,
+                channel_start=1+i*6+self.channel_start,
+                meta = {
+                    "face_index": face_index,
+                    "tree": self.label,
+                    "id": self.id
+                },
+                tags = [
+                    self.tree_type.value,
+                    "face_{}".format(face_index),
+                    self.tree_cluster.value
+                ]
             )
             dmx += 1
             fixtures.append(fix.fixtures())

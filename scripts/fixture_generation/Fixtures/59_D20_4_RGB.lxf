@@ -1,0 +1,34 @@
+{
+  "label": "59_D20_4_RGB",
+  "tags": [
+    "type_d",
+    "face_4",
+    "cluster_3",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 720.0,
+          "y": 648.5382907247958,
+          "z": 276
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 349,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

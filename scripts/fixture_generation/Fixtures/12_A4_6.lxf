@@ -1,0 +1,30 @@
+{
+  "label": "12_A4_6",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "A4",
+    "id": 10,
+    "programming_channel": 67,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "12_A4_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "12_A4_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

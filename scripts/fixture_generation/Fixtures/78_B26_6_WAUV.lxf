@@ -1,0 +1,34 @@
+{
+  "label": "78_B26_6_WAUV",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_3",
+    "WAUV"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 1113.7416697508022,
+          "y": 694.9805770653953,
+          "z": 192
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 466,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

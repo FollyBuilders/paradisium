@@ -1,0 +1,30 @@
+{
+  "label": "36_A12_6",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "A12",
+    "id": 34,
+    "programming_channel": 211,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "36_A12_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "36_A12_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

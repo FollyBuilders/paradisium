@@ -131,6 +131,8 @@ void dumpFixtureFiles() {
   }
 }
 
+String ARTNET_HOST = "192.168.2.25";
+
 void dumpFixture(Fixture3D f,String suffix,int offset,int fixtureCount) {
   java.io.PrintWriter out1 = createWriter("PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_" + suffix +".lxf");
   out1.write("{\n");
@@ -140,9 +142,9 @@ void dumpFixture(Fixture3D f,String suffix,int offset,int fixtureCount) {
   out1.write("],\n");
   out1.write("\"parameters\": {},\n");
   out1.write("\"components\": [ \n");    
-  out1.write("{ \"type\": \"strip\", \"x\": " + (f.x + offset) + " , \"y\": " + (-1.0 * f.y) + ", \"z\": " + f.z + ", \"numPoints\": " + 1 + ", \"spacing\": " + 1 + " } \n");
+  out1.write("{ \"type\": \"strip\", \"x\": " + (f.x + offset) + " , \"y\": " + (f.y) + ", \"z\": " + f.z + ", \"numPoints\": " + 1 + ", \"spacing\": " + 1 + " } \n");
   out1.write("\n],\n");
-  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"127.0.0.1\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}],\n");
+  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"192.168.2.25\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}],\n");
   out1.write("\"meta\": {\"key1\": \"val2\", \"key3\": \"val4\"}\n");
   out1.write("}\n"); 
   out1.close();  
@@ -176,7 +178,7 @@ void dumpPointFile(String suffix, int offset) {
 
 void drawTreeLabels() {
   textAlign(CENTER);
-  textSize(32);
+  textSize(64);
   for (Tree3D t : trees) {
     switch(t.type) {
       case TYPE_A: fill(0,0,255); break;

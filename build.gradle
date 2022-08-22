@@ -38,6 +38,10 @@ testing {
 	}
 }
 
+run {
+	environment "GDK_SCALE", "2"
+}
+
 test {
 	testLogging.showStandardStreams = true
 }
@@ -46,6 +50,8 @@ test {
 application {
 	mainClass = 'com.follybuilders.paradisium.ParadisiumApp'
 }
+
+
 
 spotless {
 	format 'misc', {

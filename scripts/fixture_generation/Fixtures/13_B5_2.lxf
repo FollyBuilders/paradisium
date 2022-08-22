@@ -1,0 +1,30 @@
+{
+  "label": "13_B5_2",
+  "tags": [
+    "type_b",
+    "face_2",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "B5",
+    "id": 13,
+    "programming_channel": 73,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "13_B5_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "13_B5_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

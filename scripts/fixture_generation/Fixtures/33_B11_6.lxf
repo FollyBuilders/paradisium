@@ -1,0 +1,30 @@
+{
+  "label": "33_B11_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B11",
+    "id": 31,
+    "programming_channel": 193,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "33_B11_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "33_B11_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

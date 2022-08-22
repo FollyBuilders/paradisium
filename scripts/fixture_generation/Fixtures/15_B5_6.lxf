@@ -1,0 +1,30 @@
+{
+  "label": "15_B5_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B5",
+    "id": 13,
+    "programming_channel": 85,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "15_B5_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "15_B5_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "label": "73_C25_2_WAUV",
+  "tags": [
+    "type_c",
+    "face_2",
+    "cluster_3",
+    "WAUV"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 1001.2583302491977,
+          "y": 772.9228634059948,
+          "z": 252
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 436,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

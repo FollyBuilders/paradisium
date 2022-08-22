@@ -1,0 +1,30 @@
+{
+  "label": "53_B18_4",
+  "tags": [
+    "type_b",
+    "face_4",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "B18",
+    "id": 52,
+    "programming_channel": 313,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "53_B18_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "53_B18_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

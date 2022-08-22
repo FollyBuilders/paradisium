@@ -1,0 +1,30 @@
+{
+  "label": "78_B26_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B26",
+    "id": 76,
+    "programming_channel": 463,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "78_B26_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "78_B26_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

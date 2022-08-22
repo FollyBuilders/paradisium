@@ -1,0 +1,30 @@
+{
+  "label": "21_D7_6",
+  "tags": [
+    "type_d",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "D7",
+    "id": 19,
+    "programming_channel": 121,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "21_D7_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "21_D7_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

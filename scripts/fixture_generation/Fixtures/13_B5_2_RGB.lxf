@@ -1,0 +1,34 @@
+{
+  "label": "13_B5_2_RGB",
+  "tags": [
+    "type_b",
+    "face_2",
+    "cluster_1",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 596.2583302491977,
+          "y": 227.32685902179844,
+          "z": 192
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 73,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

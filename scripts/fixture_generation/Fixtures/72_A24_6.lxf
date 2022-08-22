@@ -1,0 +1,30 @@
+{
+  "label": "72_A24_6",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "A24",
+    "id": 70,
+    "programming_channel": 427,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "72_A24_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "72_A24_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

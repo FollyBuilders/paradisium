@@ -2,3 +2,4 @@ natives
 .gradle
 build
 bin
+*.pyc

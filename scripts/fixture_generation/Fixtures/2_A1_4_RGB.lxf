@@ -1,0 +1,34 @@
+{
+  "label": "2_A1_4_RGB",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_1",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 180.0,
+          "y": 181.88457268119896,
+          "z": 144
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 7,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

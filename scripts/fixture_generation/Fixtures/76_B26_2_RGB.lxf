@@ -1,0 +1,34 @@
+{
+  "label": "76_B26_2_RGB",
+  "tags": [
+    "type_b",
+    "face_2",
+    "cluster_3",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 1136.2583302491978,
+          "y": 694.9805770653953,
+          "z": 192
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 451,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

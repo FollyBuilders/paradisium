@@ -1,0 +1,30 @@
+{
+  "label": "73_C25_2",
+  "tags": [
+    "type_c",
+    "face_2",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "C25",
+    "id": 73,
+    "programming_channel": 433,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "73_C25_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "73_C25_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

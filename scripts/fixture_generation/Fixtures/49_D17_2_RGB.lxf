@@ -1,0 +1,34 @@
+{
+  "label": "49_D17_2_RGB",
+  "tags": [
+    "type_d",
+    "face_2",
+    "cluster_2",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 471.65063509461095,
+          "y": 766.9228634059948,
+          "z": 276
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 289,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

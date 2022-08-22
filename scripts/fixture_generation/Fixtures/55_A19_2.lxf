@@ -1,0 +1,30 @@
+{
+  "label": "55_A19_2",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "A19",
+    "id": 55,
+    "programming_channel": 325,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "55_A19_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "55_A19_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

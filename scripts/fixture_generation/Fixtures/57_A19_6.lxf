@@ -1,0 +1,30 @@
+{
+  "label": "57_A19_6",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_3"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "A19",
+    "id": 55,
+    "programming_channel": 337,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "57_A19_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "57_A19_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

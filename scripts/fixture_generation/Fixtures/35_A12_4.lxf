@@ -1,0 +1,30 @@
+{
+  "label": "35_A12_4",
+  "tags": [
+    "type_a",
+    "face_4",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 4,
+    "tree": "A12",
+    "id": 34,
+    "programming_channel": 205,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "35_A12_4_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "35_A12_4_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

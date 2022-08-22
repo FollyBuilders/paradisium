@@ -1,0 +1,34 @@
+{
+  "label": "21_D7_6_WAUV",
+  "tags": [
+    "type_d",
+    "face_6",
+    "cluster_1",
+    "WAUV"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 428.34936490538905,
+          "y": 455.1537180435969,
+          "z": 276
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 124,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "label": "34_A12_2",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 2,
+    "tree": "A12",
+    "id": 34,
+    "programming_channel": 199,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "34_A12_2_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "34_A12_2_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

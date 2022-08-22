@@ -1,0 +1,30 @@
+{
+  "label": "3_A1_6",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_1"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "A1",
+    "id": 1,
+    "programming_channel": 13,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "3_A1_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "3_A1_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

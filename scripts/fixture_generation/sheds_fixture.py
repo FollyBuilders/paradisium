@@ -19,12 +19,14 @@ WAUV -> 4,5,6 | tags=wauv
 import helpers
 
 class ShedFixture:
-    def __init__(self, x, y, z, channel_start, label, tags=[], universe=0, host=helpers.ARTNET_HOST):
-        self.label = label
+    def __init__(self, x, y, z, id, channel_start, label, tags=[], universe=0, host=helpers.ARTNET_HOST, meta={}):
         self.channel_start = channel_start
         self.universe = universe
         self.host = host
         self.tags = tags
+        self.meta = meta
+        self.label = "{}_{}".format(id, label)
+
         self.x = x
         self.y = y
         self.z = z
@@ -43,6 +45,9 @@ class ShedFixture:
         return helpers.fixture_dict(
             label=label,
             tags=tags,
+            meta={
+                "fixture": False
+            },
             components=[
                 helpers.point_component_dict(
                     x=self.x,
@@ -74,12 +79,14 @@ class ShedFixture:
         )
     
     def meta_fixture(self ):
+        _meta = {
+            "programming_channel": self.channel_start,
+            "fixture": True
+        }
         return {
             "label": self.label,
             "tags": self.tags,
-            "meta": {
-                "programming_channel": self.channel_start
-            },
+            "meta": {**self.meta, **_meta},
             "parameters": {},
             "components": [
                 {

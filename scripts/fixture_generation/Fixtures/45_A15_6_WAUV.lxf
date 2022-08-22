@@ -1,0 +1,34 @@
+{
+  "label": "45_A15_6_WAUV",
+  "tags": [
+    "type_a",
+    "face_6",
+    "cluster_2",
+    "WAUV"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 292.4833395016046,
+          "y": 1156.1342951089923,
+          "z": 144
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 268,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}

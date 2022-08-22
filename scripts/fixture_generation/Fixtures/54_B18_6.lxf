@@ -1,0 +1,30 @@
+{
+  "label": "54_B18_6",
+  "tags": [
+    "type_b",
+    "face_6",
+    "cluster_2"
+  ],
+  "meta": {
+    "face_index": 6,
+    "tree": "B18",
+    "id": 52,
+    "programming_channel": 319,
+    "fixture": true
+  },
+  "parameters": {},
+  "components": [
+    {
+      "type": "54_B18_6_RGB",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    },
+    {
+      "type": "54_B18_6_WAUV",
+      "x": 0,
+      "y": 0,
+      "z": 0
+    }
+  ]
+}

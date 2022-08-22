@@ -1,0 +1,34 @@
+{
+  "label": "55_A19_2_RGB",
+  "tags": [
+    "type_a",
+    "face_2",
+    "cluster_3",
+    "RGB"
+  ],
+  "parameters": {},
+  "components": [
+    {
+      "type": "points",
+      "coords": [
+        {
+          "x": 742.5166604983954,
+          "y": 766.4228634059948,
+          "z": 144
+        }
+      ]
+    }
+  ],
+  "outputs": [
+    {
+      "protocol": "artnet",
+      "universe": 0,
+      "host": "192.168.2.51",
+      "channel": 325,
+      "num": 1
+    }
+  ],
+  "meta": {
+    "fixture": false
+  }
+}
