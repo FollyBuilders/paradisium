@@ -1,0 +1,10 @@
+{
+"label": "F.D7.6_UPPER_WHITE",
+"tags": ["T.7.6.WHITE", "WHITE"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": -408.02887 , "y": -601.03827, "z": 372.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 123, "num": 1}]
+}

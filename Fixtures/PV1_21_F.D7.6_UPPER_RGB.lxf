@@ -1,0 +1,10 @@
+{
+"label": "F.D7.6_UPPER_RGB",
+"tags": ["T.7.6.RGB", "RGB"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": -411.02887 , "y": -601.03827, "z": 372.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 120, "num": 1}]
+}

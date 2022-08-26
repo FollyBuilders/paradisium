@@ -1,0 +1,10 @@
+{
+"label": "F.E3.4_UPPER_RGB",
+"tags": ["T.3.4.RGB", "RGB"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": -450.0 , "y": -356.76913, "z": 372.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 42, "num": 1}]
+}

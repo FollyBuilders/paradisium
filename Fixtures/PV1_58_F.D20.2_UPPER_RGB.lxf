@@ -1,0 +1,10 @@
+{
+"label": "F.D20.2_UPPER_RGB",
+"tags": ["T.20.2.RGB", "RGB"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": -758.9711 , "y": -756.92285, "z": 372.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 342, "num": 1}]
+}

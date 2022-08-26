@@ -1,0 +1,10 @@
+{
+"label": "F.E3.2_UPPER_WHITE",
+"tags": ["T.3.2.WHITE", "WHITE"],
+"parameters": {},
+"components": [ 
+{ "type": "strip", "x": -485.97113 , "y": -289.26913, "z": 372.0, "numPoints": 1, "spacing": 1 } 
+
+],
+"outputs": [{"protocol": "artnet", "universe": 0, "host": "127.0.0.1", "channel": 39, "num": 1}]
+}
