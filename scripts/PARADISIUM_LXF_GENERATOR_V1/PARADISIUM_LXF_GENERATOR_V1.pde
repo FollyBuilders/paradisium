@@ -20,8 +20,19 @@ import peasy.*;
 PeasyCam cam;  
 final static boolean USE_PEASY_CAM = true;
 
+final static String TARGET_IP1 = "10.10.10.222";
+final static String TARGET_IP2 = "127.0.0.1";
+
 final static float HEXGRID_RADIUS = 90; // inches 
-final static float FIXTURE_RADIUS = 36; // inches
+//final static float FIXTURE_RADIUS = 36; // removed in favor of per-type radius
+
+final static float TYPE_A_RADIUS = 60; // inches 
+final static float TYPE_B_RADIUS = 60; // inches 
+final static float TYPE_C_RADIUS = 60; // inches 
+final static float TYPE_D_RADIUS = 90; // inches 
+final static float TYPE_E_RADIUS = 90; // inches 
+
+final static float UPPER_Z_OFFSET = 96; // for second canpoy 
 
 ArrayList<Tree3D> trees = new ArrayList<Tree3D>();
 
@@ -121,15 +132,22 @@ void dumpMainFile() {
   int fixtureCount = 0;
   for (Tree3D t : trees) {
    for (Fixture3D f : t.fixtures) {  
+    if (fixtureCount != 0) {
+       out1.write(",\n"); 
+    }     
+    if (t.type == TreeTypeEnum.TYPE_D || t.type == TreeTypeEnum.TYPE_E) {
+      out1.write("{ \"type\": \"" + "PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_UPPER" + "_RGB" + "\", \"x\": 0, \"y\": 0, \"z\": 0 }  ");
+      out1.write(",\n"); 
+      out1.write("{ \"type\": \"" + "PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_UPPER" + "_WHITE" + "\", \"x\": 0, \"y\": 0, \"z\": 0 }  ");      
+      out1.write(",\n"); 
+    }
     out1.write("{ \"type\": \"" + "PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_RGB" + "\", \"x\": 0, \"y\": 0, \"z\": 0 }  ");
     out1.write(",\n"); 
     out1.write("{ \"type\": \"" + "PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_WHITE" + "\", \"x\": 0, \"y\": 0, \"z\": 0 }  ");
-    if (fixtureCount != totalFixtures - 1) {
-       out1.write(",\n"); 
-    }
     fixtureCount++;
    } 
   }
+  
   out1.write("\n],\n");
   out1.write("\"meta\": {\"key1\": \"val2\", \"key3\": \"val4\"}\n");
   out1.write("}\n");
@@ -143,6 +161,10 @@ void dumpFixtureFiles() {
     for (Fixture3D f : t.fixtures) {  
       dumpFixture(f,"RGB",0,fixtureCount);
       dumpFixture(f,"WHITE",3,fixtureCount);
+      if ((t.type == TreeTypeEnum.TYPE_D) || (t.type == TreeTypeEnum.TYPE_E)) {
+          dumpUpperFixture(f,"RGB",0,fixtureCount);
+          dumpUpperFixture(f,"WHITE",3,fixtureCount);
+      }
       fixtureCount++;
     }
   }
@@ -166,7 +188,26 @@ void dumpFixture(Fixture3D f,String suffix,int offset,int fixtureCount) {
   out1.write("\"components\": [ \n");    
   out1.write("{ \"type\": \"strip\", \"x\": " + (-1.0 * f.x + offset) + " , \"y\": " + (-1.0 * f.y) + ", \"z\": " + f.z + ", \"numPoints\": " + 1 + ", \"spacing\": " + 1 + " } \n");
   out1.write("\n],\n");
-  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"10.10.10.222\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}]\n");
+  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"" + TARGET_IP1 + "\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}]\n");
+  out1.write("}\n"); 
+  out1.close();  
+}
+
+void dumpUpperFixture(Fixture3D f,String suffix,int offset,int fixtureCount) {
+  java.io.PrintWriter out1 = createWriter("PV1_" + String.format("%02d", fixtureCount + 1) + "_" + f.id() + "_UPPER" + "_" + suffix +".lxf");
+  out1.write("{\n");
+  out1.write("\"label\": \"" + f.id() + "_UPPER" + "_" + suffix + "\",\n");  
+  out1.write("\"tags\": [");
+  out1.write("\"" + "T." + ((fixtureCount/3) + 1) + "." + (((((f.dmx - 1) % 18) / 6) * 2) + 2)  + "." + suffix + "\"");
+  out1.write(", ");
+  
+  out1.write("\"" + suffix +  "\"");
+  out1.write("],\n");
+  out1.write("\"parameters\": {},\n");
+  out1.write("\"components\": [ \n");    
+  out1.write("{ \"type\": \"strip\", \"x\": " + (-1.0 * f.x + offset) + " , \"y\": " + (-1.0 * f.y) + ", \"z\": " + (f.z + UPPER_Z_OFFSET) + ", \"numPoints\": " + 1 + ", \"spacing\": " + 1 + " } \n");
+  out1.write("\n],\n");
+  out1.write("\"outputs\": [{\"protocol\": \"artnet\", \"universe\": " + 0 + ", \"host\": \"" + TARGET_IP2 + "\", \"channel\": " + (f.dmx - 1 + offset)   + ", \"num\": " + 1 + "}]\n");
   out1.write("}\n"); 
   out1.close();  
 }
@@ -226,7 +267,7 @@ class Tree3D {
   public int gridY = 0;
   public float centerX = 0.0;
   public float centerY = 0.0;
-  public float fr = FIXTURE_RADIUS;
+  public float fr = 0.0;
   public TreeTypeEnum type;
   public TreeClusterEnum cluster;
   public String id;
@@ -241,18 +282,18 @@ class Tree3D {
     id = sid;
     type = tt;
     float fz = 0.0; // definitely look this up based on tree type   
-    fr = FIXTURE_RADIUS; // maybe look this up based on tree type?
+    //fr = FIXTURE_RADIUS; // maybe look this up based on tree type?
       switch(type) {
         case TYPE_A:
-          fz = 12 * 12; fr = 26 / 2; break;
+          fz = 12 * 12; fr = TYPE_A_RADIUS / 2; break;
         case TYPE_B:
-          fz = 16 * 12; fr = 26 / 2; break;
+          fz = 16 * 12; fr = TYPE_B_RADIUS / 2; break;
         case TYPE_C:
-          fz = 21 * 12; fr = 26 / 2; break;
+          fz = 21 * 12; fr = TYPE_C_RADIUS / 2; break;
         case TYPE_D:
-          fz = 23 * 12; fr = 50 / 2; break;
+          fz = 23 * 12; fr = TYPE_D_RADIUS / 2; break;
         case TYPE_E:
-          fz = 23 * 12; fr = 50 / 2; break;
+          fz = 23 * 12; fr = TYPE_E_RADIUS / 2; break;
       }
     cluster = tc;
     for (int i = 0 ; i < 3 ; i++) {

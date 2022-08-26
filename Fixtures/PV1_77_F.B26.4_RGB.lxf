@@ -3,7 +3,7 @@
 "tags": ["T.26.4.RGB", "RGB"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": -1125.0 , "y": -870.3651, "z": 192.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": -1125.0 , "y": -887.3651, "z": 192.0, "numPoints": 1, "spacing": 1 } 
 
 ],
 "outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 456, "num": 1}]

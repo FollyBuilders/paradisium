@@ -3,7 +3,7 @@
 "tags": ["T.19.4.WHITE", "WHITE"],
 "parameters": {},
 "components": [ 
-{ "type": "strip", "x": -717.0 , "y": -948.30743, "z": 144.0, "numPoints": 1, "spacing": 1 } 
+{ "type": "strip", "x": -717.0 , "y": -965.30743, "z": 144.0, "numPoints": 1, "spacing": 1 } 
 
 ],
 "outputs": [{"protocol": "artnet", "universe": 0, "host": "10.10.10.222", "channel": 333, "num": 1}]

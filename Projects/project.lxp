@@ -1,6 +1,6 @@
 {
   "version": "0.4.1",
-  "timestamp": 1658446099925,
+  "timestamp": 1661535711330,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -32,13 +32,13 @@
       {
         "jsonFixtureType": "PV1",
         "jsonParameters": {},
-        "id": 83,
+        "id": 1560,
         "class": "heronarts.lx.structure.JsonFixture",
         "internal": {
           "modulationColor": 0
         },
         "parameters": {
-          "label": "PV1 1",
+          "label": "PV1 2",
           "x": 0.0,
           "y": 0.0,
           "z": 0.0,
@@ -48,7 +48,7 @@
           "scale": 1.0,
           "selected": true,
           "deactivate": false,
-          "enabled": false,
+          "enabled": true,
           "brightness": 1.0,
           "identify": false,
           "mute": false,
@@ -196,7 +196,7 @@
           "scene-5": false,
           "crossfader": 0.5,
           "crossfaderBlendMode": 1,
-          "focusedChannel": 1,
+          "focusedChannel": 5,
           "cueA": false,
           "cueB": false,
           "viewCondensed": false
@@ -230,7 +230,7 @@
               "label": "Channel-1",
               "arm": false,
               "selected": false,
-              "enabled": true,
+              "enabled": false,
               "cue": false,
               "fader": 1.0,
               "crossfadeGroup": 1,
@@ -297,8 +297,8 @@
             "parameters": {
               "label": "Channel-2",
               "arm": false,
-              "selected": true,
-              "enabled": true,
+              "selected": false,
+              "enabled": false,
               "cue": false,
               "fader": 1.0,
               "crossfadeGroup": 1,
@@ -445,47 +445,6 @@
                   }
                 },
                 "deviceVersion": -1
-              },
-              {
-                "id": 826,
-                "class": "heronarts.lx.effect.SparkleEffect",
-                "internal": {
-                  "modulationColor": 0,
-                  "expanded": true,
-                  "modulationExpanded": false
-                },
-                "parameters": {
-                  "label": "Sparkle",
-                  "enabled": true,
-                  "amount": 1.0,
-                  "density": 50.0,
-                  "speed": 0.5,
-                  "variation": 25.0,
-                  "duration": 100.0,
-                  "sharp": 0.0,
-                  "waveshape": 0,
-                  "minInterval": 1.0,
-                  "maxInterval": 1.0,
-                  "minLevel": 75.0,
-                  "maxLevel": 100.0
-                },
-                "children": {
-                  "modulation": {
-                    "id": 827,
-                    "class": "heronarts.lx.modulation.LXModulationEngine",
-                    "internal": {
-                      "modulationColor": 0
-                    },
-                    "parameters": {
-                      "label": "Modulation"
-                    },
-                    "children": {},
-                    "modulators": [],
-                    "modulations": [],
-                    "triggers": []
-                  }
-                },
-                "deviceVersion": -1
               }
             ],
             "clips": [],
@@ -566,7 +525,7 @@
                 },
                 "parameters": {
                   "label": "Sparkle",
-                  "enabled": true,
+                  "enabled": false,
                   "amount": 1.0,
                   "density": 50.0,
                   "speed": 0.5,
@@ -676,7 +635,7 @@
                 },
                 "parameters": {
                   "label": "Sparkle",
-                  "enabled": true,
+                  "enabled": false,
                   "amount": 1.0,
                   "density": 50.0,
                   "speed": 0.5,
@@ -745,7 +704,7 @@
             ]
           },
           {
-            "id": 1242,
+            "id": 1444,
             "class": "heronarts.lx.mixer.LXChannel",
             "internal": {
               "modulationColor": 0,
@@ -754,8 +713,8 @@
             "parameters": {
               "label": "Channel-6",
               "arm": false,
-              "selected": false,
-              "enabled": false,
+              "selected": true,
+              "enabled": true,
               "cue": false,
               "fader": 1.0,
               "crossfadeGroup": 0,
@@ -780,8 +739,8 @@
             "patternIndex": 0,
             "patterns": [
               {
-                "id": 1254,
-                "class": "heronarts.lx.pattern.texture.NoisePattern",
+                "id": 1456,
+                "class": "com.follybuilders.paradisium.pattern.TreeTesterPattern",
                 "internal": {
                   "modulationColor": 0,
                   "expanded": true,
@@ -789,38 +748,16 @@
                   "autoCycleEligible": true
                 },
                 "parameters": {
-                  "label": "Noise",
+                  "label": "TreeTester",
                   "recall": false,
-                  "midpoint": 50.0,
-                  "contrast": 100.0,
-                  "xOffset": 0.0,
-                  "yOffset": 0.0,
-                  "zOffset": 0.0,
-                  "scale": 0.5,
-                  "minScale": 1.0,
-                  "maxScale": 10.0,
-                  "xScale": 1.0,
-                  "yScale": 1.0,
-                  "zScale": 1.0,
-                  "motion": false,
-                  "motionSpeed": 0.0,
-                  "motionSpeedRange": 128.0,
-                  "xMotion": 0.0,
-                  "yMotion": 0.0,
-                  "zMotion": 1.0,
-                  "algorithm": 0,
-                  "seed": 0,
-                  "octaves": 3,
-                  "lacunarity": 2.0,
-                  "gain": 0.5,
-                  "ridgeOffset": 0.9,
-                  "xMode": 0,
-                  "yMode": 0,
-                  "zMode": 0
+                  "face2": true,
+                  "face4": true,
+                  "face6": true,
+                  "tree": 1
                 },
                 "children": {
                   "modulation": {
-                    "id": 1255,
+                    "id": 1457,
                     "class": "heronarts.lx.modulation.LXModulationEngine",
                     "internal": {
                       "modulationColor": 0
@@ -1008,7 +945,7 @@
         "children": {}
       },
       "visibilityHelper": {
-        "Paradisium_Master_20220721_JPT003.obj": true
+        "Paradisium_Master_20220721_JPT004.obj": true
       }
     }
   },
@@ -1030,22 +967,22 @@
         "centerPoint": false,
         "camera": {
           "active": true,
-          "radius": 224.94388617533693,
-          "theta": 3.138726284727454,
-          "phi": -0.003439711406826973,
-          "x": 179.9320408469066,
-          "y": -1573.7140179872513,
-          "z": 276.97582167200744
+          "radius": 2827.9006515103165,
+          "theta": 3.2505165338516235,
+          "phi": -0.02923746220767498,
+          "x": -379.686170052737,
+          "y": -920.0933756828308,
+          "z": 291.13379053771496
         },
         "cue": [
           {
             "active": true,
-            "radius": 224.94388617533693,
-            "theta": 3.138726284727454,
-            "phi": -0.003439711406826973,
-            "x": 179.9320408469066,
-            "y": -1573.7140179872513,
-            "z": 276.97582167200744
+            "radius": 2827.9006515103165,
+            "theta": 3.2505165338516235,
+            "phi": -0.02923746220767498,
+            "x": -379.686170052737,
+            "y": -920.0933756828308,
+            "z": 291.13379053771496
           },
           {
             "active": false,
@@ -1095,7 +1032,7 @@
         ],
         "focus": 0,
         "pointCloud": {
-          "pointSize": 3.0
+          "pointSize": 10.0
         },
         "grid": {
           "visible": false,
