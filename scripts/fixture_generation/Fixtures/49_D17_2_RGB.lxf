@@ -1,22 +1,17 @@
 {
   "label": "49_D17_2_RGB",
   "tags": [
-    "type_d",
-    "face_2",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 471.65063509461095,
-          "y": 766.9228634059948,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 471.65063509461095,
+      "y": 766.9228634059948,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "D17",
+    "id": 49,
+    "programming_channel": 289,
     "fixture": false
   }
 }

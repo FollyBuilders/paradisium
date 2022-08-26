@@ -66,7 +66,7 @@ if __name__ == "__main__":
     #   - WAUV fixture point file
     for fix in all_fixtures:
       for subfix in fix:
-        if subfix["meta"]["fixture"]:
+        if not subfix["meta"]["fixture"]:
           main_fixtures.append(subfix)
         filename = "./Fixtures/{}.lxf".format(subfix["label"])
         with open(filename, 'w') as fp:

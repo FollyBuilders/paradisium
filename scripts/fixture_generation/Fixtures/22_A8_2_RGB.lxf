@@ -1,22 +1,17 @@
 {
   "label": "22_A8_2_RGB",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_1",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 337.5166604983954,
-          "y": 376.7114317029974,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 337.5166604983954,
+      "y": 376.7114317029974,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A8",
+    "id": 22,
+    "programming_channel": 127,
     "fixture": false
   }
 }

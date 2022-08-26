@@ -1,22 +1,17 @@
 {
   "label": "78_B26_6_WAUV",
   "tags": [
-    "type_b",
-    "face_6",
-    "cluster_3",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 1113.7416697508022,
-          "y": 694.9805770653953,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 1113.7416697508022,
+      "y": 694.9805770653953,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "B26",
+    "id": 76,
+    "programming_channel": 463,
     "fixture": false
   }
 }

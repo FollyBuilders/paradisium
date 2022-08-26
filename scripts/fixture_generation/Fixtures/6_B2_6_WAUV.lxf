@@ -1,22 +1,17 @@
 {
   "label": "6_B2_6_WAUV",
   "tags": [
-    "type_b",
-    "face_6",
-    "cluster_1",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 303.7416697508023,
-          "y": 71.44228634059948,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 303.7416697508023,
+      "y": 71.44228634059948,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "B2",
+    "id": 4,
+    "programming_channel": 31,
     "fixture": false
   }
 }

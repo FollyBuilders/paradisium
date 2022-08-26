@@ -1,22 +1,17 @@
 {
   "label": "52_B18_2_RGB",
   "tags": [
-    "type_b",
-    "face_2",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 596.2583302491977,
-          "y": 1006.7497224277932,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 596.2583302491977,
+      "y": 1006.7497224277932,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "B18",
+    "id": 52,
+    "programming_channel": 307,
     "fixture": false
   }
 }

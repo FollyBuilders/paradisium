@@ -1,22 +1,17 @@
 {
   "label": "2_A1_4_RGB",
   "tags": [
-    "type_a",
-    "face_4",
-    "cluster_1",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 180.0,
-          "y": 181.88457268119896,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 180.0,
+      "y": 181.88457268119896,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "A1",
+    "id": 1,
+    "programming_channel": 7,
     "fixture": false
   }
 }

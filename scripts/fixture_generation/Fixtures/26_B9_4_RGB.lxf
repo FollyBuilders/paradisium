@@ -1,22 +1,17 @@
 {
   "label": "26_B9_4_RGB",
   "tags": [
-    "type_b",
-    "face_4",
-    "cluster_1",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 180.0,
-          "y": 480.6537180435969,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 180.0,
+      "y": 480.6537180435969,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "B9",
+    "id": 25,
+    "programming_channel": 151,
     "fixture": false
   }
 }

@@ -1,22 +1,17 @@
 {
   "label": "35_A12_4_WAUV",
   "tags": [
-    "type_a",
-    "face_4",
-    "cluster_2",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 45.0,
-          "y": 883.3651497465943,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 45.0,
+      "y": 883.3651497465943,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "A12",
+    "id": 34,
+    "programming_channel": 205,
     "fixture": false
   }
 }

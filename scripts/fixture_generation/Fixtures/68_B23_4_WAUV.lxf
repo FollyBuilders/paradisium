@@ -1,22 +1,17 @@
 {
   "label": "68_B23_4_WAUV",
   "tags": [
-    "type_b",
-    "face_4",
-    "cluster_3",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 855.0,
-          "y": 870.3651497465943,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 855.0,
+      "y": 870.3651497465943,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "B23",
+    "id": 67,
+    "programming_channel": 403,
     "fixture": false
   }
 }

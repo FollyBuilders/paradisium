@@ -1,22 +1,17 @@
 {
   "label": "40_B14_2_WAUV",
   "tags": [
-    "type_b",
-    "face_2",
-    "cluster_2",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 191.2583302491977,
-          "y": 1084.6920087683927,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 191.2583302491977,
+      "y": 1084.6920087683927,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "B14",
+    "id": 40,
+    "programming_channel": 235,
     "fixture": false
   }
 }

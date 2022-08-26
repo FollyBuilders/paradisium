@@ -1,22 +1,17 @@
 {
   "label": "48_A16_6_RGB",
   "tags": [
-    "type_a",
-    "face_6",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 427.4833395016046,
-          "y": 922.3074360871938,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 427.4833395016046,
+      "y": 922.3074360871938,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "A16",
+    "id": 46,
+    "programming_channel": 283,
     "fixture": false
   }
 }

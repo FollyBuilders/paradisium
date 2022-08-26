@@ -10,6 +10,16 @@ def point_component_dict(x, y, z):
         }]
     }
 
+def strip_component_dict(x, y, z):
+    return {
+        "type": "strip",
+        "x": x,
+        "y": y,
+        "z": z,
+        "numPoints": 1,
+        "spacing": 1
+    }
+
 
 def artnet_output_dict(channel, universe=0, num=1, host=ARTNET_HOST):
     return {

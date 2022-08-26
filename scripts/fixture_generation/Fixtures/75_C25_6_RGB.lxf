@@ -1,22 +1,17 @@
 {
   "label": "75_C25_6_RGB",
   "tags": [
-    "type_c",
-    "face_6",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 978.7416697508023,
-          "y": 772.9228634059948,
-          "z": 252
-        }
-      ]
+      "type": "strip",
+      "x": 978.7416697508023,
+      "y": 772.9228634059948,
+      "z": 252,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "C25",
+    "id": 73,
+    "programming_channel": 445,
     "fixture": false
   }
 }

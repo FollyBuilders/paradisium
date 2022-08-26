@@ -1,22 +1,17 @@
 {
   "label": "74_C25_4_RGB",
   "tags": [
-    "type_c",
-    "face_4",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 990.0,
-          "y": 792.4228634059948,
-          "z": 252
-        }
-      ]
+      "type": "strip",
+      "x": 990.0,
+      "y": 792.4228634059948,
+      "z": 252,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "C25",
+    "id": 73,
+    "programming_channel": 439,
     "fixture": false
   }
 }

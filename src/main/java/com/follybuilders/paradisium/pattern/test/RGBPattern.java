@@ -5,19 +5,28 @@ import com.follybuilders.paradisium.ParadisiumCategory;
 import com.follybuilders.paradisium.pattern.ParadisiumBasePattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
+import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
+import heronarts.lx.parameter.BoundedParameter;
 
 @LXCategory(ParadisiumCategory.RGBWAUVPATTERN)
 public class RGBPattern extends ParadisiumBasePattern {
 
+  BoundedParameter red = new BoundedParameter("Red", 0, 255);
+  BoundedParameter green = new BoundedParameter("Green", 0, 255);
+  BoundedParameter blue = new BoundedParameter("Blue", 0, 255);
+
   public RGBPattern(LX lx) {
     super(lx);
+    addParameter("red", red);
+    addParameter("green", green);
+    addParameter("blue", blue);
   }
 
   public void run(double deltaMs) {
-    String tag = "RGB";
-    for (LXModel strip : model.sub(tag)) {
-      setColor(strip, 0xffffffff);
+    for (LXModel fixture : model.sub("RGB")) {
+      setColor(fixture, LXColor.RED);
+    
     }
   }
 }

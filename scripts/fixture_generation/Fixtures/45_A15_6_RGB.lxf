@@ -1,22 +1,17 @@
 {
   "label": "45_A15_6_RGB",
   "tags": [
-    "type_a",
-    "face_6",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 292.4833395016046,
-          "y": 1156.1342951089923,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 292.4833395016046,
+      "y": 1156.1342951089923,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "A15",
+    "id": 43,
+    "programming_channel": 265,
     "fixture": false
   }
 }

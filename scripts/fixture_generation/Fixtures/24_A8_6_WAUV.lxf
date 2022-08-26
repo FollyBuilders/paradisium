@@ -1,22 +1,17 @@
 {
   "label": "24_A8_6_WAUV",
   "tags": [
-    "type_a",
-    "face_6",
-    "cluster_1",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 292.4833395016046,
-          "y": 376.7114317029974,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 292.4833395016046,
+      "y": 376.7114317029974,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "A8",
+    "id": 22,
+    "programming_channel": 139,
     "fixture": false
   }
 }

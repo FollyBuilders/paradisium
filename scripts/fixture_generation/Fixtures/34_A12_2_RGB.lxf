@@ -1,22 +1,17 @@
 {
   "label": "34_A12_2_RGB",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 67.51666049839541,
-          "y": 844.3651497465943,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 67.51666049839541,
+      "y": 844.3651497465943,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A12",
+    "id": 34,
+    "programming_channel": 199,
     "fixture": false
   }
 }

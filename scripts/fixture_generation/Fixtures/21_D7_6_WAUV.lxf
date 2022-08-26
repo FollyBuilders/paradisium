@@ -1,22 +1,17 @@
 {
   "label": "21_D7_6_WAUV",
   "tags": [
-    "type_d",
-    "face_6",
-    "cluster_1",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 428.34936490538905,
-          "y": 455.1537180435969,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 428.34936490538905,
+      "y": 455.1537180435969,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "D7",
+    "id": 19,
+    "programming_channel": 121,
     "fixture": false
   }
 }

@@ -1,22 +1,17 @@
 {
   "label": "15_B5_6_WAUV",
   "tags": [
-    "type_b",
-    "face_6",
-    "cluster_1",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 573.7416697508023,
-          "y": 227.32685902179844,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 573.7416697508023,
+      "y": 227.32685902179844,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "B5",
+    "id": 13,
+    "programming_channel": 85,
     "fixture": false
   }
 }

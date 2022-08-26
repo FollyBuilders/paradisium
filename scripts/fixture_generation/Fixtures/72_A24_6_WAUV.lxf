@@ -1,22 +1,17 @@
 {
   "label": "72_A24_6_WAUV",
   "tags": [
-    "type_a",
-    "face_6",
-    "cluster_3",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 967.4833395016046,
-          "y": 922.3074360871938,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 967.4833395016046,
+      "y": 922.3074360871938,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "A24",
+    "id": 70,
+    "programming_channel": 427,
     "fixture": false
   }
 }

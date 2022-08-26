@@ -1,22 +1,17 @@
 {
   "label": "62_A21_4_RGB",
   "tags": [
-    "type_a",
-    "face_4",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 855.0,
-          "y": 571.5960043841964,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 855.0,
+      "y": 571.5960043841964,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "A21",
+    "id": 61,
+    "programming_channel": 367,
     "fixture": false
   }
 }

@@ -42,14 +42,16 @@ class ShedFixture:
         )
     
     def _fixture(self, channel_start, tags, label):
+        _meta={
+            "programming_channel": self.channel_start,
+            "fixture": False
+        }
         return helpers.fixture_dict(
             label=label,
             tags=tags,
-            meta={
-                "fixture": False
-            },
+            meta={**self.meta, **_meta},
             components=[
-                helpers.point_component_dict(
+                helpers.strip_component_dict(
                     x=self.x,
                     y=self.y,
                     z=self.z
@@ -60,7 +62,7 @@ class ShedFixture:
     
     def rgb_fixture(self):
         kind = "RGB"
-        tags = self.tags + [kind]
+        tags = [kind]
 
         return self._fixture(
             label = "{}_{}".format(self.label, kind),
@@ -70,7 +72,7 @@ class ShedFixture:
     
     def wauv_fixture(self):
         kind = "WAUV"
-        tags = self.tags + [kind]
+        tags = [kind]
         
         return self._fixture(
             label = "{}_{}".format(self.label, kind),

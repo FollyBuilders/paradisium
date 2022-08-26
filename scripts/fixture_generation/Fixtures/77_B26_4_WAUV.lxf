@@ -1,22 +1,17 @@
 {
   "label": "77_B26_4_WAUV",
   "tags": [
-    "type_b",
-    "face_4",
-    "cluster_3",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 1125.0,
-          "y": 714.4805770653953,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 1125.0,
+      "y": 714.4805770653953,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "B26",
+    "id": 76,
+    "programming_channel": 457,
     "fixture": false
   }
 }

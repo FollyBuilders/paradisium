@@ -1,22 +1,17 @@
 {
   "label": "58_D20_2_RGB",
   "tags": [
-    "type_d",
-    "face_2",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 741.650635094611,
-          "y": 611.0382907247958,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 741.650635094611,
+      "y": 611.0382907247958,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "D20",
+    "id": 58,
+    "programming_channel": 343,
     "fixture": false
   }
 }

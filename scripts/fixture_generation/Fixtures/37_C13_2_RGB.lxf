@@ -1,22 +1,17 @@
 {
   "label": "37_C13_2_RGB",
   "tags": [
-    "type_c",
-    "face_2",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 191.2583302491977,
-          "y": 928.8074360871938,
-          "z": 252
-        }
-      ]
+      "type": "strip",
+      "x": 191.2583302491977,
+      "y": 928.8074360871938,
+      "z": 252,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "C13",
+    "id": 37,
+    "programming_channel": 217,
     "fixture": false
   }
 }

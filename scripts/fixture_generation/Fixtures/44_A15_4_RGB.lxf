@@ -1,22 +1,17 @@
 {
   "label": "44_A15_4_RGB",
   "tags": [
-    "type_a",
-    "face_4",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 315.0,
-          "y": 1195.1342951089923,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 315.0,
+      "y": 1195.1342951089923,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "A15",
+    "id": 43,
+    "programming_channel": 259,
     "fixture": false
   }
 }

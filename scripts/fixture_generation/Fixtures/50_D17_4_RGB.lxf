@@ -1,22 +1,17 @@
 {
   "label": "50_D17_4_RGB",
   "tags": [
-    "type_d",
-    "face_4",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 450.0,
-          "y": 804.4228634059948,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 450.0,
+      "y": 804.4228634059948,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "D17",
+    "id": 49,
+    "programming_channel": 295,
     "fixture": false
   }
 }

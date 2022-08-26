@@ -1,22 +1,17 @@
 {
   "label": "70_A24_2_RGB",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 1012.5166604983954,
-          "y": 922.3074360871938,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 1012.5166604983954,
+      "y": 922.3074360871938,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A24",
+    "id": 70,
+    "programming_channel": 415,
     "fixture": false
   }
 }

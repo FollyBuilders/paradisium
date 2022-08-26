@@ -1,22 +1,17 @@
 {
   "label": "81_A27_6_RGB",
   "tags": [
-    "type_a",
-    "face_6",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 1102.4833395016046,
-          "y": 532.5960043841964,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 1102.4833395016046,
+      "y": 532.5960043841964,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "A27",
+    "id": 79,
+    "programming_channel": 481,
     "fixture": false
   }
 }

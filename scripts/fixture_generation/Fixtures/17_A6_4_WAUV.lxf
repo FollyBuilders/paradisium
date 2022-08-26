@@ -1,22 +1,17 @@
 {
   "label": "17_A6_4_WAUV",
   "tags": [
-    "type_a",
-    "face_4",
-    "cluster_1",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 585.0,
-          "y": 415.7114317029974,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 585.0,
+      "y": 415.7114317029974,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "A6",
+    "id": 16,
+    "programming_channel": 97,
     "fixture": false
   }
 }

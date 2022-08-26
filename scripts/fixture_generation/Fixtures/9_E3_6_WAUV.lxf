@@ -1,22 +1,17 @@
 {
   "label": "9_E3_6_WAUV",
   "tags": [
-    "type_e",
-    "face_6",
-    "cluster_1",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 428.34936490538905,
-          "y": 143.38457268119896,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 428.34936490538905,
+      "y": 143.38457268119896,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "E3",
+    "id": 7,
+    "programming_channel": 49,
     "fixture": false
   }
 }

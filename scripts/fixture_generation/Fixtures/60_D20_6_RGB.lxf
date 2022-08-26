@@ -1,22 +1,17 @@
 {
   "label": "60_D20_6_RGB",
   "tags": [
-    "type_d",
-    "face_6",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 698.349364905389,
-          "y": 611.0382907247958,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 698.349364905389,
+      "y": 611.0382907247958,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 6,
+    "tree": "D20",
+    "id": 58,
+    "programming_channel": 355,
     "fixture": false
   }
 }

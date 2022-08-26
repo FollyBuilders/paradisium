@@ -1,22 +1,17 @@
 {
   "label": "55_A19_2_WAUV",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_3",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 742.5166604983954,
-          "y": 766.4228634059948,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 742.5166604983954,
+      "y": 766.4228634059948,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A19",
+    "id": 55,
+    "programming_channel": 325,
     "fixture": false
   }
 }

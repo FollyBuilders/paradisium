@@ -1,22 +1,17 @@
 {
   "label": "20_D7_4_RGB",
   "tags": [
-    "type_d",
-    "face_4",
-    "cluster_1",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 450.0,
-          "y": 492.6537180435969,
-          "z": 276
-        }
-      ]
+      "type": "strip",
+      "x": 450.0,
+      "y": 492.6537180435969,
+      "z": 276,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "D7",
+    "id": 19,
+    "programming_channel": 115,
     "fixture": false
   }
 }

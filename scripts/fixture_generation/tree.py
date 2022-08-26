@@ -56,7 +56,9 @@ class Tree:
             fx = self.center_x + (math.cos(math.radians(-30 - i * -120)) * fr)
             fy = self.center_y + (math.sin(math.radians(-30 - i * -120)) * fr)
             fz = fz
+
             face_index = 2 * i + 2 # NOTE(G3): 6 faces, ever other strat with 2, 4, 6
+            
             fix = ShedFixture(
                 label="{}_{}".format(self.label, face_index),
                 x=fx,

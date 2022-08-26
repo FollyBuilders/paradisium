@@ -1,22 +1,17 @@
 {
   "label": "10_A4_2_RGB",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_1",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 607.5166604983954,
-          "y": 64.94228634059948,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 607.5166604983954,
+      "y": 64.94228634059948,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A4",
+    "id": 10,
+    "programming_channel": 55,
     "fixture": false
   }
 }

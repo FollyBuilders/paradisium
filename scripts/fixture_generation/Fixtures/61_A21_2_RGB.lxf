@@ -1,22 +1,17 @@
 {
   "label": "61_A21_2_RGB",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 877.5166604983954,
-          "y": 532.5960043841964,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 877.5166604983954,
+      "y": 532.5960043841964,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A21",
+    "id": 61,
+    "programming_channel": 361,
     "fixture": false
   }
 }

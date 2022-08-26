@@ -1,22 +1,17 @@
 {
   "label": "32_B11_4_RGB",
   "tags": [
-    "type_b",
-    "face_4",
-    "cluster_2",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 180.0,
-          "y": 792.4228634059948,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 180.0,
+      "y": 792.4228634059948,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "B11",
+    "id": 31,
+    "programming_channel": 187,
     "fixture": false
   }
 }

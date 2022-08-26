@@ -1,22 +1,17 @@
 {
   "label": "65_B22_4_RGB",
   "tags": [
-    "type_b",
-    "face_4",
-    "cluster_3",
     "RGB"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 855.0,
-          "y": 402.7114317029974,
-          "z": 192
-        }
-      ]
+      "type": "strip",
+      "x": 855.0,
+      "y": 402.7114317029974,
+      "z": 192,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 4,
+    "tree": "B22",
+    "id": 64,
+    "programming_channel": 385,
     "fixture": false
   }
 }

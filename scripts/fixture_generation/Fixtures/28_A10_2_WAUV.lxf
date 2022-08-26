@@ -1,22 +1,17 @@
 {
   "label": "28_A10_2_WAUV",
   "tags": [
-    "type_a",
-    "face_2",
-    "cluster_2",
     "WAUV"
   ],
   "parameters": {},
   "components": [
     {
-      "type": "points",
-      "coords": [
-        {
-          "x": 337.5166604983954,
-          "y": 688.4805770653953,
-          "z": 144
-        }
-      ]
+      "type": "strip",
+      "x": 337.5166604983954,
+      "y": 688.4805770653953,
+      "z": 144,
+      "numPoints": 1,
+      "spacing": 1
     }
   ],
   "outputs": [
@@ -29,6 +24,10 @@
     }
   ],
   "meta": {
+    "face_index": 2,
+    "tree": "A10",
+    "id": 28,
+    "programming_channel": 163,
     "fixture": false
   }
 }
