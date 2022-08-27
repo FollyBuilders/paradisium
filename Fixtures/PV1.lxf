@@ -4,167 +4,167 @@
 "parameters": {},
 "components": [ 
 { "type": "PV1_01_F.A1.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_01_F.A1.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_02_F.A1.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_02_F.A1.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_03_F.A1.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_03_F.A1.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_04_F.B2.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_04_F.B2.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_05_F.B2.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_05_F.B2.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_06_F.B2.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_06_F.B2.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_07_F.E3.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_07_F.E3.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_08_F.E3.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_08_F.E3.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_09_F.E3.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_09_F.E3.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_10_F.A4.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_10_F.A4.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_11_F.A4.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_11_F.A4.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_12_F.A4.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_12_F.A4.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_13_F.B5.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_13_F.B5.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_14_F.B5.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_14_F.B5.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_15_F.B5.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_15_F.B5.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_16_F.A6.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_16_F.A6.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_17_F.A6.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_17_F.A6.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_18_F.A6.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_18_F.A6.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_19_F.D7.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_19_F.D7.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_20_F.D7.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_20_F.D7.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_21_F.D7.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_21_F.D7.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_22_F.A8.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_22_F.A8.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_23_F.A8.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_23_F.A8.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_24_F.A8.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_24_F.A8.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_25_F.B9.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_25_F.B9.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_26_F.B9.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_26_F.B9.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_27_F.B9.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_27_F.B9.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_28_F.A10.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_28_F.A10.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_29_F.A10.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_29_F.A10.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_30_F.A10.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_30_F.A10.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_31_F.B11.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_31_F.B11.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_32_F.B11.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_32_F.B11.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_33_F.B11.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_33_F.B11.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_34_F.A12.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_34_F.A12.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_35_F.A12.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_35_F.A12.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_36_F.A12.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_36_F.A12.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_37_F.C13.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_37_F.C13.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_38_F.C13.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_38_F.C13.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_39_F.C13.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_39_F.C13.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_40_F.B14.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_40_F.B14.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_41_F.B14.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_41_F.B14.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_42_F.B14.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_42_F.B14.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_43_F.A15.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_43_F.A15.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_44_F.A15.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_44_F.A15.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_45_F.A15.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_45_F.A15.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_46_F.A16.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_46_F.A16.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_47_F.A16.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_47_F.A16.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_48_F.A16.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_48_F.A16.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_49_F.D17.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_49_F.D17.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_50_F.D17.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_50_F.D17.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_51_F.D17.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_51_F.D17.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_52_F.B18.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_52_F.B18.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_53_F.B18.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_53_F.B18.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_54_F.B18.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_54_F.B18.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_55_F.A19.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_55_F.A19.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_56_F.A19.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_56_F.A19.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_57_F.A19.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_57_F.A19.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_58_F.D20.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_58_F.D20.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_59_F.D20.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_59_F.D20.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_60_F.D20.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_60_F.D20.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_61_F.A21.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_61_F.A21.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_62_F.A21.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_62_F.A21.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_63_F.A21.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_63_F.A21.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_64_F.B22.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_64_F.B22.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_65_F.B22.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_65_F.B22.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_66_F.B22.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_66_F.B22.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_67_F.B23.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_67_F.B23.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_68_F.B23.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_68_F.B23.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_69_F.B23.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_69_F.B23.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_70_F.A24.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_70_F.A24.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_71_F.A24.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_71_F.A24.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_72_F.A24.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_72_F.A24.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_73_F.C25.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_73_F.C25.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_74_F.C25.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_74_F.C25.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_75_F.C25.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_75_F.C25.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_76_F.B26.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_76_F.B26.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_77_F.B26.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_77_F.B26.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_78_F.B26.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_78_F.B26.6_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_79_F.A27.2_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_79_F.A27.2_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_80_F.A27.4_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_80_F.A27.4_WHITE", "x": 0, "y": 0, "z": 0 }  ,
+
 { "type": "PV1_81_F.A27.6_RGB", "x": 0, "y": 0, "z": 0 }  ,
-{ "type": "PV1_81_F.A27.6_WHITE", "x": 0, "y": 0, "z": 0 }  
+
 ],
 "meta": {"key1": "val2", "key3": "val4"}
 }
